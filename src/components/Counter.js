@@ -48,7 +48,7 @@ function Counter() {
     // useEffect(() =>  {}, [count])
 
     useEffect(() => {
-      fetch("https://jsonplaceholder.typicode.com/users")
+      fetch("http://localhost:3000/users")
       .then(res => res.json())
       .then(users => setUsers(users))
       .catch(error=> console.log(error))
